@@ -1,0 +1,8 @@
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.AssemblyInfoInputs.cache
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.AssemblyInfo.cs
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.csproj.CoreCompileInputs.cache
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.RazorAssemblyInfo.cache
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.RazorAssemblyInfo.cs
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net5.0\lanchonete.sourcelink.json

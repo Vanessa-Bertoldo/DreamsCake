@@ -28,3 +28,4 @@ C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net8.0\refint\lanchonete
 C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net8.0\lanchonete.pdb
 C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net8.0\lanchonete.genruntimeconfig.cache
 C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net8.0\ref\lanchonete.dll
+C:\Users\Z\source\repos\lanchonete\lanchonete\obj\Debug\net8.0\lanchonete.sourcelink.json
