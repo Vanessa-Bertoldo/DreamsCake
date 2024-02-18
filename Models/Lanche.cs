@@ -18,8 +18,8 @@ namespace lanchonete.Models
         public string DescricaoCurta { get; set; }
         public string DescricaoDetalhada { get; set; }
         [Required]
-        [Column(TypeName = "decimal(10,2")]
-        [Range(1,999, ErrorMessage = "O preço deve estar entre 1 e 999")]
+        [Column(TypeName = "decimal(10,2)")]
+        [Range(1, 999, ErrorMessage = "O preço deve estar entre 1 e 999")]
         public decimal Preco { get; set; }
         [StringLength(300, ErrorMessage = "Tamanho excedido")]
         public string ImagemUrl { get; set; }

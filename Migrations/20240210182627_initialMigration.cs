@@ -13,7 +13,7 @@ namespace lanchonete.Migrations
             migrationBuilder.AlterColumn<decimal>(
                 name: "Preco",
                 table: "Lanches",
-                type: "decimal(10,2",
+                type: "decimal(10,2)",
                 nullable: false,
                 oldClrType: typeof(decimal),
                 oldType: "decimal(18,2)");

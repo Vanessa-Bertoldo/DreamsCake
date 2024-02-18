@@ -17,7 +17,7 @@ namespace lanchonete
             // Adiciona o DbContext (banco de dados) ao contêiner de injeção de dependência.
             // Isso permite que o DbContext seja injetado em outras classes, como controladores ou serviços.
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Adiciona os serviços MVC ao contêiner de injeção de dependência.
             // Isso inclui serviços para controladores e visualizações.
