@@ -1,4 +1,6 @@
 ﻿using lanchonete.Context;
+using lanchonete.Repositories;
+using lanchonete.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace lanchonete
@@ -18,6 +20,10 @@ namespace lanchonete
             // Isso permite que o DbContext seja injetado em outras classes, como controladores ou serviços.
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //Registro dos serviços dos repositorios
+            services.AddTransient<ILanchesRepository, LancheRepository>();
+            services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
             // Adiciona os serviços MVC ao contêiner de injeção de dependência.
             // Isso inclui serviços para controladores e visualizações.
