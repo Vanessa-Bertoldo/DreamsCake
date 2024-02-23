@@ -1,0 +1,4 @@
+﻿============================== PartialView ===============================
+É uma view que é renderizada em outra View
+São usadas para encapsular a lógica reutilizada nas viewqs permitindo simplificar a complexidade da views
+
