@@ -3,3 +3,11 @@
 São usadas para encapsular a lógica reutilizada nas viewqs permitindo simplificar a complexidade da views
 
 OBS.: A pasta Views/Shared contém arquivos que podem ser acessados por toda a aplicação
+
+GUID: Identificador global único
+
+As models que são criadas, caso queira inseri-lás no banco, insira o mapeamento no Contexto da aplicação
+
+=========================== Migrations ====================================
+Adicionar migrations: add-migration nome
+Atualizar banco: update-database
