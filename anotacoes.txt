@@ -11,3 +11,19 @@ As models que são criadas, caso queira inseri-lás no banco, insira o mapeament
 =========================== Migrations ====================================
 Adicionar migrations: add-migration nome
 Atualizar banco: update-database
+
+=========================== .NET Core ====================================
+- Faz uso de Sessions
+- Com base em um dicionário ou tabela hash no servidor, o estado da sessão persiste os dados atraves das requisições de navegador
+- O ASP.NET Core mantém o estado da sessão, dando ao cliente um cookie que contém o ID da sesão, que é enviado ao servidor com cada solicitação
+- O servidor mantém uma sessão por um tempo limitado após a última requisição
+- Você poe definir o tempo limite da sessão ou usar o valor padrão de 20 minutos
+- O estado da sessão é ideal para armazenar dados do usuário especificos de uma determinada sessão
+_ Dados são excluidos do cache com a expiração da sessão ou com o comando Session.Clear()
+
+CONFIGURANDO UMA SESSION
+Classe Startup deve conter:
+- Qualquer um dos caches de memória IDistributedCache.
+- Uma chamada a AddSession em ConfigureServices()
+- A chamada UseSession em Configure
+- middleware gerencia o estado da sessão

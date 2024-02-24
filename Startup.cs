@@ -25,9 +25,18 @@ namespace lanchonete
             services.AddTransient<ILanchesRepository, LancheRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 
+            //Define o servico para acessar os recursos do HTTPContext
+            //Aqui criamos uma instancia de HttpContextAcessor e usar os recursos da classe HttpContext para obter informações do  request, response, dentro outras informações do navegador
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             // Adiciona os serviços MVC ao contêiner de injeção de dependência.
             // Isso inclui serviços para controladores e visualizações.
             services.AddControllersWithViews();
+
+            //registrando os middlewares
+            services.AddMemoryCache();
+            services.AddSession();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +57,8 @@ namespace lanchonete
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthorization();
+            //habilita o usa das sessions
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
