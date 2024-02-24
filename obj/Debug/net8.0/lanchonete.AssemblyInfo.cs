@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lanchonete")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e739fc01de524d9128d41e42e24790bff38e4b81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4871fa0f411517a2e28193f5ccdf67425e093568")]
 [assembly: System.Reflection.AssemblyProductAttribute("lanchonete")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lanchonete")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
