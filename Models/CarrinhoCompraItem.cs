@@ -10,7 +10,7 @@ namespace lanchonete.Models
         public Lanche Lanche { get; set; }
         public int Quantidade { get; set; }
         [StringLength(200)]
-        public int CarrinhoCompraId { get; set; }
+        public string CarrinhoCompraId { get; set; }
 
     }
 }
