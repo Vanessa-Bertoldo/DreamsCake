@@ -24,6 +24,8 @@ namespace lanchonete
             //Registro dos serviços dos repositorios
             services.AddTransient<ILanchesRepository, LancheRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+            //AddScope cria uma instancia diferente a cada request
+            services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp)); //necessario para ocorrer a disponibilização da instancia dessa classe
 
             //Define o servico para acessar os recursos do HTTPContext
             //Aqui criamos uma instancia de HttpContextAcessor e usar os recursos da classe HttpContext para obter informações do  request, response, dentro outras informações do navegador
